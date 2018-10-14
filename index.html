@@ -4,82 +4,7 @@
 <meta charset="utf-8">
 <title>Random Post</title>
 <meta content='width=device-width, initial-scale=1' name='viewport'>
-<style>
-body {
-  background-color:white;
-  margin:0;
-  padding:0;
-  color:#333;
-  font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
-}
-a {
-  text-decoration:none;
-  transition:all 400ms ease-in-out;
-  width: 50%;
-}
-/* ==== Related Post Widget Start ==== */
-
-.related-post {
-  margin:0 auto;
-  height:600px;
-  overflow:hidden;
-}
-.related-post h4 {
-  font-size:20px;
-  margin:0 5px 10px;
-  font-weight:500;
-}
-
-/* Style 2 */
-.related-post-style-2 {
-  margin:0;
-  padding:0;
-  list-style:none;
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-}
-.related-post-style-2 li {
-  background-color: #fff;
-   display: inline-flex;
-   padding:0;
-    float: none;
-    overflow: hidden;
-    margin:0 0 10px;
-    list-style:none;
-}
-.related-post-style-2 li:hover .related-post-item-thumbnail{
-    opacity:.5;
-}
-.related-post-style-2 li a:hover {color:#777}
-.related-post-style-2 .related-post-item-thumbnail {
-  width: 100%;
-  height:100px;
-  max-width:none;
-  max-height:none;
-  background-color:transparent;
-  border:none;
-  padding:0;
-  float:left;
-  margin:0 8px 0 0;
-  transition:all 400ms ease-in-out;
-}
-.related-post-style-2 .related-post-item-title {
-  font-weight: bold;
-  line-height: 1.1;
-  font-size: 18px;
-  color: #000;
-  margin: 0 10px 0 10px;
-  box-sizing: border-box;
-  font-family: roboto;
-}
-.related-post-style-2 .related-post-item-more,.related-post-style-2 .related-post-item-summary,.related-post-style-2 .related-post-item-more,.related-post-style-2 .related-post-item-summary a{
-  display:none;
-}
-@media screen and (max-width:600px){.related-post-style-2 .related-post-item-summary {display:none;}
-}
-/* ==== Related Post Widget End ==== */
-</style>
+<link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/s/wyti285w5xpdbf9/Relacionados.css">
 </head>
 <body>
 
@@ -98,7 +23,7 @@ function getQueryVariable(variable) {
   return(false);
 }
   function generateCss(q) {
-    var css       = document.createElement('style'),
+    var css       = document.createElement('link'),
         sp2       = document.getElementById('related-post'),
         parentDiv = sp2.parentNode;
     css.type = 'text/css';
